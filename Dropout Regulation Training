@@ -1,0 +1,8 @@
+https://gluon.mxnet.io/chapter03_deep-neural-networks/mlp-dropout-scratch.html
+
+One method to improve the accuracy of our model is to train it using random dropouts from the nural network. This will prvent our machine 
+from finding irrelevent patterns in our training data and wrongly trying to apply them to the test (real data). By randomly dropping out 
+hidden nodes in the layers of our network, this method prevents the program from becoming too reliant on any one characteristic in it's
+conclusion: cat/not cat. The program works by making the probablilty of dropping any given node layer in the network .5 during training
+(but of course leaves them all on during the test data). "One intuition here is that because the nodes to drop out are chosen randomly on
+every pass, the representations in each layer can’t depend on the exact values taken by nodes in the previous layer."
